@@ -20,6 +20,18 @@
   
   2. 사용자와 컴퓨터 간 상호작용을 위해 각각의 코드를 작성한 후 함께 작동하게 했다. (작동 원리는 같으나 약간 수정)
   
+  ```elif turn==1 or you == '두부 한 모':                 
+                if com == com_num[turn] :
+                    print(turn,'번 플레이어 : ',com,'\n\n'
+                      '>>> ',turn,'번 플레이어가 졌습니다.')
+                    break
+                else :
+                    print(turn,'번 플레이어 : ',com)
+                    turn = com_str[com]
+                    print('> 다음 차례는 ', turn,'번 플레이어 입니다.\n')
+  ```
+                    
+  
   3. 컴퓨터가 다음 플레이어를 지목하기 위해 랜덤 함수를 사용하여 랜덤하게 지목하도록 했다.
   
  ` rand = random.randint(1, 5)` 
